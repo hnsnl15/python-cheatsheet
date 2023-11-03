@@ -1,39 +1,47 @@
 ## Table of Contents
 
 1. [Python Cheatsheet](#python-cheatsheet)
-   1.1. [Variables and Data Types](#variables-and-data-types)
-   1.2. [Basic Operations](#basic-operations)
-   1.3. [Conditional Statements](#conditional-statements)
-   1.4. [Loops](#loops)
-   1.5. [Functions](#functions)
-   1.6. [Lists](#lists)
-   1.7. [Strings](#strings)
-   1.8. [Dictionaries](#dictionaries)
-   1.9. [Error Handling](#error-handling)
-   1.10. [File Handling](#file-handling)
-   1.11. [Modules and Libraries](#modules-and-libraries)
+    - [Variables and Data Types](#variables-and-data-types)
+    - [Basic Operations](#basic-operations)
+    - [Conditional Statements](#conditional-statements)
+    - [Loops](#loops)
+    - [Functions](#functions)
+    - [Lists](#lists)
+    - [Strings](#strings)
+    - [Dictionaries](#dictionaries)
+    - [Error Handling](#error-handling)
+    - [File Handling](#file-handling)
+    - [Modules and Libraries](#modules-and-libraries)
 
 2. [Python Data Structures Cheatsheet](#python-data-structures-cheatsheet)
-   2.1. [Lists](#lists)
-   2.2. [Tuples](#tuples)
-   2.3. [Sets](#sets)
-   2.4. [Dictionaries](#dictionaries)
-   2.5. [Strings](#strings)
-   2.6. [Queues (using `collections.deque`)](#queues-using-collectionsdeque)
-   2.7. [Stacks (using lists)](#stacks-using-lists)
-   2.8. [Comprehensions](#comprehensions)
-   2.9. [Iterating](#iterating)
-   2.10. [Special Data Structures](#special-data-structures)
+    - [Lists](#lists-1)
+    - [Tuples](#tuples)
+    - [Sets](#sets)
+    - [Dictionaries](#dictionaries-1)
+    - [Strings](#strings-1)
+    - [Queues (using `collections.deque`)](#queues-using-collectionsdeque)
+    - [Stacks (using lists)](#stacks-using-lists)
+    - [Comprehensions](#comprehensions)
+    - [Iterating](#iterating)
+    - [Special Data Structures](#special-data-structures)
 
 3. [Python Operators Cheatsheet](#python-operators-cheatsheet)
-   3.1. [Arithmetic Operators](#arithmetic-operators)
-   3.2. [Comparison Operators](#comparison-operators)
-   3.3. [Logical Operators](#logical-operators)
-   3.4. [Assignment Operators](#assignment-operators)
-   3.5. [Identity Operators](#identity-operators)
-   3.6. [Membership Operators](#membership-operators)
-   3.7. [Bitwise Operators](#bitwise-operators)
-   3.8. [Ternary Operator](#ternary-operator)
+    - [Arithmetic Operators](#arithmetic-operators)
+    - [Comparison Operators](#comparison-operators)
+    - [Logical Operators](#logical-operators)
+    - [Assignment Operators](#assignment-operators)
+    - [Identity Operators](#identity-operators)
+    - [Membership Operators](#membership-operators)
+    - [Bitwise Operators](#bitwise-operators)
+    - [Ternary Operator](#ternary-operator)
+
+4. [Python OOP Cheatsheet](#python-oop-cheatsheet)
+    - [Class](#class)
+    - [Inheritance](#inheritance)
+    - [Encapsulation](#encapsulation)
+    - [Polymorphism](#polymorphism)
+    - [Abstraction (using ABC)](#abstraction-using-abc)
+    - [Class Methods and Static Methods](#class-methods-and-static-methods)
 
 ## Python Cheatsheet
 
@@ -505,3 +513,108 @@ value_if_true if condition else value_if_false
 ```
 
 This cheat sheet covers the most commonly used Python operators. Understanding these operators is essential for working with Python and performing various operations in your code.
+
+## Python OOP Cheatsheet
+
+## Class
+```python
+class MyClass:
+    # Class attributes
+    class_variable = 10
+
+    def __init__(self, parameter1, parameter2):
+        # Instance attributes
+        self.instance_variable1 = parameter1
+        self.instance_variable2 = parameter2
+
+    def instance_method(self):
+        # Instance method
+        return f"Instance method: {self.instance_variable1}"
+
+# Create an object of the class
+obj = MyClass(parameter1_value, parameter2_value)
+
+# Accessing attributes and methods
+obj.instance_variable1
+obj.instance_method()
+
+# Accessing class attribute
+MyClass.class_variable
+```
+
+## Inheritance
+```python
+class ChildClass(ParentClass):
+    def __init__(self, child_param, parent_param):
+        super().__init__(parent_param)
+        self.child_param = child_param
+```
+
+## Encapsulation
+```python
+class EncapsulationExample:
+    def __init__(self):
+        self.__private_variable = 42
+
+    def get_private_variable(self):
+        return self.__private_variable
+
+    def set_private_variable(self, value):
+        self.__private_variable = value
+```
+
+## Polymorphism
+```python
+class Dog:
+    def speak(self):
+        return "Woof!"
+
+class Cat:
+    def speak(self):
+        return "Meow!"
+
+def animal_sound(animal):
+    return animal.speak()
+
+dog = Dog()
+cat = Cat()
+
+animal_sound(dog)  # "Woof!"
+animal_sound(cat)  # "Meow!"
+```
+
+## Abstraction (using ABC)
+```python
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.14 * self.radius * self.radius
+```
+
+## Class Methods and Static Methods
+```python
+class MyClass:
+    class_variable = 10
+
+    @classmethod
+    def class_method(cls):
+        return cls.class_variable
+
+    @staticmethod
+    def static_method():
+        return "Static method"
+
+MyClass.class_method()   # Accessing class method
+MyClass.static_method()  # Accessing static method
+```
+
+This cheatsheet covers the basics of OOP in Python, including classes, objects, inheritance, encapsulation, polymorphism, abstraction, and class methods/static methods. You can expand on these concepts as needed for your specific programming tasks.
