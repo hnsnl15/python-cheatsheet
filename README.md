@@ -35,8 +35,6 @@
    3.7. [Bitwise Operators](#bitwise-operators)
    3.8. [Ternary Operator](#ternary-operator)
 
-This table of contents will help readers quickly navigate through your README and find the information they need.
-
 ## Python Cheatsheet
 
 ### Variables and Data Types
