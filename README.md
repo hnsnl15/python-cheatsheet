@@ -25,7 +25,7 @@
    2.9. [Iterating](#iterating)
    2.10. [Special Data Structures](#special-data-structures)
 
-3. [Python Operators Cheatsheet](#python-operators-cheat-sheet)
+3. [Python Operators Cheatsheet](#python-operators-cheatsheet)
    3.1. [Arithmetic Operators](#arithmetic-operators)
    3.2. [Comparison Operators](#comparison-operators)
    3.3. [Logical Operators](#logical-operators)
