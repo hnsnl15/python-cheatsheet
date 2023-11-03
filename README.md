@@ -1,3 +1,42 @@
+## Table of Contents
+
+1. [Python Cheatsheet](#python-cheatsheet)
+   1.1. [Variables and Data Types](#variables-and-data-types)
+   1.2. [Basic Operations](#basic-operations)
+   1.3. [Conditional Statements](#conditional-statements)
+   1.4. [Loops](#loops)
+   1.5. [Functions](#functions)
+   1.6. [Lists](#lists)
+   1.7. [Strings](#strings)
+   1.8. [Dictionaries](#dictionaries)
+   1.9. [Error Handling](#error-handling)
+   1.10. [File Handling](#file-handling)
+   1.11. [Modules and Libraries](#modules-and-libraries)
+
+2. [Python Data Structures Cheatsheet](#python-data-structures-cheatsheet)
+   2.1. [Lists](#lists)
+   2.2. [Tuples](#tuples)
+   2.3. [Sets](#sets)
+   2.4. [Dictionaries](#dictionaries)
+   2.5. [Strings](#strings)
+   2.6. [Queues (using `collections.deque`)](#queues-using-collectionsdeque)
+   2.7. [Stacks (using lists)](#stacks-using-lists)
+   2.8. [Comprehensions](#comprehensions)
+   2.9. [Iterating](#iterating)
+   2.10. [Special Data Structures](#special-data-structures)
+
+3. [Python Operators Cheat Sheet](#python-operators-cheat-sheet)
+   3.1. [Arithmetic Operators](#arithmetic-operators)
+   3.2. [Comparison Operators](#comparison-operators)
+   3.3. [Logical Operators](#logical-operators)
+   3.4. [Assignment Operators](#assignment-operators)
+   3.5. [Identity Operators](#identity-operators)
+   3.6. [Membership Operators](#membership-operators)
+   3.7. [Bitwise Operators](#bitwise-operators)
+   3.8. [Ternary Operator](#ternary-operator)
+
+This table of contents will help readers quickly navigate through your README and find the information they need.
+
 ## Python Cheatsheet
 
 ### Variables and Data Types
