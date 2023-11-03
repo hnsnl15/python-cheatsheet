@@ -25,7 +25,7 @@
    2.9. [Iterating](#iterating)
    2.10. [Special Data Structures](#special-data-structures)
 
-3. [Python Operators Cheat Sheet](#python-operators-cheat-sheet)
+3. [Python Operators Cheatsheet](#python-operators-cheat-sheet)
    3.1. [Arithmetic Operators](#arithmetic-operators)
    3.2. [Comparison Operators](#comparison-operators)
    3.3. [Logical Operators](#logical-operators)
@@ -365,7 +365,7 @@ my_dict["key"] += 1  # Avoids KeyErrors
 
 This cheatsheet should help you understand and work with Python's various data structures effectively. Remember that these are just the basics, and each data structure offers more advanced capabilities.
 
-## Python Operators Cheat Sheet
+## Python Operators Cheatsheet
 
 ### Arithmetic Operators
 
